@@ -1,5 +1,5 @@
 #' @import behavr
-#' @import data.table
+#' @importFrom data.table ":=" "%like%" .N .SD as.data.table as.IDate copy dcast fread melt setkeyv setnames shift
 #' @importFrom stats "na.omit"
 #' @importFrom utils "unzip"
 . = NULL

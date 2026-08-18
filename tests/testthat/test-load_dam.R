@@ -57,7 +57,7 @@ test_that("load_dam works as expected with IDate and Date ", {
 
   q[, stop_datetime := as.Date(stop_datetime)]
   dt2 <- load_dam(q)
-  q[, stop_datetime := as.IDate(stop_datetime)]
+  q[, stop_datetime := data.table::as.IDate(stop_datetime)]
   dt3 <- load_dam(q)
 
   expect_identical(dt1[,activity], dt2[,activity])
